@@ -1,0 +1,143 @@
+body{
+	color:white;
+}
+
+.container{
+	display:flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.containerbox{
+	display:flex;
+	overflow: hidden;
+	width:auto;
+	height:100%;
+}
+
+.colorsphere{
+	float:middle;
+	 position: fixed;
+  top: calc(50% - 150px);
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px #fff,
+    inset 10px 0 15px #f7b2ff,
+    inset -10px 0 15px #ffa0cc,
+    inset 10px 0 50px #f7b2ff,
+    inset -10px 0 50px #ffa0cc,
+    0 0 20px #fff,
+    -10px 0 50px #f7b2ff,
+    10px 0 50px #ffa0cc;
+    animation: circleMove 5s infinite linear;
+}
+
+@keyframes circleMove{
+	0%{
+		transform: rotate(360deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+.container3{
+	display:flex;
+	justify-content: space-between;
+	position:relative;
+}
+
+.row{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding:10px;
+}
+
+.container2{
+	display:flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#desc1{
+	font-size: 1em;
+	font-weight: 400;
+}
+
+#desc{
+	font-size: 1em;
+}
+
+span{
+	position:absolute;
+	font-family: 'Work Sans', sans-serif;
+	color:white;
+	background-color: rgba(255,255,255,0.5);
+	width:100%;
+	height:30%;
+	font-weight:500;
+	text-align: center;
+	padding-top:2%;
+	font-size:72px;
+	opacity:0;
+}
+
+span:hover{
+	opacity:1;
+}
+
+#title, #about, #work{
+	display:none;
+}
+
+a{
+	color:white;
+}
+
+a:hover{
+	text-decoration:none;
+	color:white;
+}
+
+h3:hover{
+	color:rgb(244,66,92);
+}
+
+.fab{
+	color: pink;
+	font-size:35px;
+	padding:5px;
+}
+
+.fab:hover{
+	color:rgb(244,66,92);
+}
+
+p{
+	font-family: 'Work Sans', sans-serif;
+	color:pink;
+	font-size: 1.5em;
+	font-weight:100;
+	text-align: center;
+}
+
+h1{
+	font-family: 'Work Sans', sans-serif;
+	font-weight:'Extra-Light';
+	color:white;
+	font-weight:100;
+	font-size: 72px;
+	text-shadow:0 0 5px rgb(244,66,92),0 0 10px rgb(244,66,92),0 0 20px rgb(244,66,92),0 0 50px rgb(244,66,92),0 0 100px rgb(244,66,92);
+	text-align: center;
+}
+
+h3{
+	font-family: 'Work Sans', sans-serif;
+	color:pink;
+	font-weight:100;
+	text-align: center;
+}

@@ -1,0 +1,75 @@
+body{
+	background-color:white;
+}
+
+.container{
+	display:flex;
+	justify-content: space-between;
+}
+
+.container2{
+	display:flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#title, #about, #work{
+	display:none;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+img:hover{
+	opacity:0.75;
+}
+
+.fab{
+	color: pink;
+	font-size:35px;
+	padding:5px;
+}
+
+.fas{
+	color:pink;
+	padding-top:40px;
+	font-size:40px;
+}
+
+.fas:hover{
+	color:rgb(244,66,92);
+}
+
+.fab:hover{
+	color:rgb(244,66,92);
+}
+
+h3:hover{
+	color:rgb(244,66,92);
+}
+
+p{
+	font-family: 'Work Sans', sans-serif;
+	color:pink;
+	font-size: 1.5em;
+	font-weight:100;
+	text-align: center;
+}
+
+h1{
+	font-family: 'Work Sans', sans-serif;
+	font-weight:'Extra-Light';
+	color:white;
+	font-weight:100;
+	font-size: 72px;
+	text-shadow:0 0 5px rgb(244,66,92),0 0 10px rgb(244,66,92),0 0 20px rgb(244,66,92),0 0 50px rgb(244,66,92),0 0 100px rgb(244,66,92);
+	text-align: center;
+}
+
+h3{
+	font-family: 'Work Sans', sans-serif;
+	color:pink;
+	font-weight:100;
+	text-align: center;
+}

@@ -1,0 +1,181 @@
+body{
+	background-color:rgb(62, 82, 109);
+	background-image:url("https://i.ibb.co/68BpN7C/dovneonbg.png");
+	background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
+}
+
+
+.container{
+	display:flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.container3{
+	display:flex;
+	justify-content: space-between;
+}
+
+.container4{
+	display:flex;
+	width:auto;
+	height:275px;
+}
+
+.row{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding:10px;
+}
+
+.container2{
+	display:flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#title, #about, #work{
+	display:none;
+}
+
+.fab{
+	color: pink;
+	font-size:35px;
+	padding:5px;
+}
+
+.fab:hover{
+	color:white;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+h3:hover{
+	color:white;
+}
+
+#insta{
+	display:inline;
+	width:35px;
+	height:35px;
+}
+
+#twit{
+	display:inline;
+	width:35px;
+	height:35px;
+}
+
+#flickr{
+	display:inline;
+	width:35px;
+	height:35px;
+}
+
+#cloud1{
+	width:20%;
+	height:20%;
+	top:0px;
+	animation: cloudmoveone 7s forwards;
+}
+
+@keyframes cloudmoveone{
+	0%{
+		left:10%;
+		top:0;
+		opacity:0;
+	}
+	100%{
+		transform: translateY(30%);
+		opacity:100%;
+	}
+}
+
+#cloud2{
+	width:10%;
+	height:10%;
+	transform: translateY(-150%);
+	animation: cloudmovetwo 8s forwards;
+}
+
+@keyframes cloudmovetwo{
+	0%{
+		left:75%;
+		opacity:0;
+	}
+	100%{
+		transform: translateY(-75%);
+		opacity:100%;
+	}
+}
+
+#cloud3{
+	position:absolute;
+	width:15%;
+	height:20%;
+	left:70%;
+	animation: cloudmovethree 8s forwards;
+}
+
+@keyframes cloudmovethree{
+	0%{
+		opacity:0;
+	}
+	100%{
+		transform: translateY(20%);
+		opacity:100%;
+	}
+}
+
+#cloud4{
+	position:absolute;
+	width:6%;
+	height:10%;
+	left:90%;
+	animation: cloudmovefour 8s forwards;
+}
+
+@keyframes cloudmovefour{
+	0%{
+		opacity:0;
+		transform: translateY(60%);
+	}
+	100%{
+		transform: translateY(200%);
+		opacity:100%;
+	}
+}
+
+
+p{
+	font-family: 'Work Sans', sans-serif;
+	color:pink;
+	font-size: 1.5em;
+	font-weight:100;
+	text-align: center;
+}
+
+h1{
+	font-family: 'Work Sans', sans-serif;
+	font-weight:'Extra-Light';
+	color:white;
+	font-weight:100;
+	font-size: 72px;
+	text-shadow:0 0 5px rgb(244,66,92),0 0 10px rgb(244,66,92),0 0 20px rgb(244,66,92),0 0 50px rgb(244,66,92),0 0 100px rgb(244,66,92);
+	text-align: center;
+}
+
+h3{
+	font-family: 'Work Sans', sans-serif;
+	color:pink;
+	font-weight:100;
+	text-align: center;
+}
