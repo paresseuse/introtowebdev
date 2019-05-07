@@ -1,0 +1,127 @@
+html { 
+  background: url(https://i.ibb.co/YQhzsNq/ocean.gif) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+body{
+	margin:0;
+	padding:0;
+	font-family: 'HKGroteskRegular'; 
+	overflow:hidden;
+}
+
+#text{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	font-size:4em;
+	font-weight: bold;
+	color:chartreuse;
+	animation: animate 5s infinite linear;
+
+}
+
+@keyframes animate{
+	0%{
+		transform:translate(-50%,-50%) rotate(360deg);
+	}
+	100%{
+		transform:translate(-50%,-50%) rotate(0deg);
+	}
+
+
+}
+
+.container{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	margin: 0 auto;
+}
+
+
+/*
+.move{
+	display:flex;
+	padding-top: 50%;
+	justify-content:center;
+	align-items:center;
+}
+
+.containerBox{
+	position:fixed;
+	display:flex;
+	justify-content:center;
+	align-items:baseline;
+}
+*/
+
+.fa{
+	position:absolute;
+	color:rgba(255,255,255,0.75);
+}
+
+.fa.fa-arrow-circle-o-left{
+	padding-left:5%;
+}
+
+.fa.fa-arrow-circle-o-right{
+	padding-right:5%;
+
+}
+
+#paraDesc{
+	text-align: right;
+	font-family: 'HKGroteskRegular'; 
+	font-size: 24px;
+}
+
+h1{
+	font-family: 'HKGroteskRegular'; 
+    font-weight: bold; 
+	font-size: 50px;
+	padding-left:5%;
+	padding-top: 5%;
+	color:chartreuse;
+}
+
+p{
+	color:chartreuse;
+}
+
+.button{
+	justify-content: center;
+	margin-top:300%;
+	background-color:rgba(0,0,255,0);
+	border: solid 3px chartreuse;
+	border-radius:5px;
+	color:chartreuse;
+	padding:15px;
+	text-align:center;
+	font-size:24px;
+}
+
+.button:hover{
+	border: solid 3px white;
+	color:white;
+}
+
+#title{
+	animation:titleFade 5s;
+}
+
+@keyframes titleFade{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+
+#desc{
+	animation:descFade 4s;
+}
+
+@keyframes descFade{
+	0%{opacity:0}
+	50%{opacity:0}
+	100%{opacity:1}
+}
