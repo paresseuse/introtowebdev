@@ -18,6 +18,42 @@ img{
 	100%{opacity:1;}
 }
 
+#upcycled{
+	position:absolute;
+	padding-top:17%;
+	padding-left:43%;
+	transform: rotate(30deg);
+}
+
+#sustainability{
+	position:absolute;
+	padding-left:60%;
+	padding-top:2%;
+	transform: rotate(10deg);
+}
+
+#ff{
+	position:absolute;
+	padding-top: 53%;
+	padding-left:50%;
+	transform: rotate(-40deg);
+}
+
+#ff:hover{
+	position:absolute;
+	transform: scale(1.1) translateX(-30px) rotate(-40deg);
+}
+
+#upcycled:hover{
+	position:absolute;
+	transform: scale(1.1) translateX(-20px) translateY(-10px) rotate(30deg);
+}
+
+#sustainability:hover{
+	position:absolute;
+	transform: scale(1.2) translateX(-60px) rotate(10deg);
+}
+
 .move{
 	display:flex;
 	margin-top:10%;
@@ -31,7 +67,7 @@ img{
 	display:flex;
 	align-content: center;
 	width:30%;
-	height:50%;
+	height:30%;
 	background-color:rgba(0,0,50,0.5);
 }
 
@@ -66,11 +102,6 @@ img{
 	padding-bottom:3%;
 	font-family: 'HKGroteskRegular'; 
 	font-size: 16px;
-}
-
-#ff{
-	top:23.5%;
-	left:50%;
 }
 
 h1{
@@ -114,10 +145,61 @@ p{
 
 #desc{
 	animation:descFade 4s;
+	padding-right:5px;
 }
 
 @keyframes descFade{
 	0%{opacity:0}
 	50%{opacity:0}
 	100%{opacity:1}
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.resizegif{
+	display:flex;
+	justify-content: center;
 }
